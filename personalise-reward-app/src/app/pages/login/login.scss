@@ -3,31 +3,25 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: radial-gradient(circle at top, #1e0026, #000);
+    background: linear-gradient(to right top, #0f172a, #1e3a8a);
     font-family: 'Segoe UI', sans-serif;
   }
   
   .login-card {
     background: rgba(255, 255, 255, 0.06);
-    padding: 3rem;
+    padding: 2.5rem;
     border-radius: 1.5rem;
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
-    color: #fff;
-    width: 320px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 340px;
     text-align: center;
     backdrop-filter: blur(10px);
-    border: 2px solid #ff007a;
+    border: 2px solid #0284c7;
   
     h1 {
       font-size: 1.7rem;
       margin-bottom: 1.5rem;
-      color: #ff007a;
-    }
-  
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
+      color: #38bdf8; // matching the blue tones used in dashboard
     }
   
     select {
@@ -37,24 +31,27 @@
       border: none;
       margin-bottom: 1.5rem;
       font-size: 1rem;
+      background-color: #f1f5f9;
+      color: #0f172a;
     }
   
     button {
       width: 100%;
       padding: 0.75rem;
-      background-color: #00ff99;
-      border: none;
+      background-color: #10b981; // emerald green from dashboard
+      color: white;
       font-weight: bold;
       border-radius: 0.5rem;
+      border: none;
       cursor: pointer;
-      transition: 0.3s ease;
+      transition: background-color 0.3s ease;
   
       &:hover {
-        background-color: #00cc7a;
+        background-color: #059669;
       }
   
       &:disabled {
-        opacity: 0.4;
+        background-color: #94a3b8;
         cursor: not-allowed;
       }
     }
