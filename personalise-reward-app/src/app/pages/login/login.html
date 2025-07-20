@@ -1,0 +1,13 @@
+<div class="login-container">
+    <div class="login-card">
+      <h1>🎰 Login to Game Rewards</h1>
+      <label for="player-select">🎮 Select Player</label>
+      <select id="player-select" [(ngModel)]="selectedUserId">
+        <option value="" disabled selected>Select a Player</option>
+        <option *ngFor="let user of users" [value]="user.player_id">
+          🧑 {{ user.name }}
+        </option>
+      </select>
+      <button (click)="login()" [disabled]="!selectedUserId">🚀 Enter Dashboard</button>
+    </div>
+  </div>

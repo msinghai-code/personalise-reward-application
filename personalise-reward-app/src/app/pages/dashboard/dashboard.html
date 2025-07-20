@@ -1,0 +1,11 @@
+<div class="dashboard-header">
+    <h2>Welcome, {{ playerName }}! (LQ: {{ lq | number: '1.0-0' }})</h2>
+    <button (click)="logout()">Logout</button>
+  </div>
+  <div class="reward-grid">
+    <div class="reward-card" *ngFor="let reward of rewards">
+      <div class="reward-chip">{{ reward.reason }}</div>
+      <h3>🎲 {{ reward.title }}</h3>
+      <button>Claim Now</button>
+    </div>
+  </div>
